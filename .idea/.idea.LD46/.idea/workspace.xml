@@ -2,13 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11615ce6-6d0e-4158-8051-f1cb0a8e86bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Come on.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Come on.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Dont worry.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Dont worry.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Hmm.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Hmm.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Hold tight.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Hold tight.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/I feel like you know things.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/I feel like you know things.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/I wonder.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/I wonder.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Maybe I can open this.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Maybe I can open this.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/So much death.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/So much death.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/This looks dangerous.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/This looks dangerous.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/We need to get out of here.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/We need to get out of here.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Wow.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Wow.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Yes we're ready.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Yes we're ready.mp3.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Endlings/EndlingBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Endlings/EndlingBox.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/WalkCycle.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/WalkCycle.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,15 +62,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/Sequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/CaptionsSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/ColliderClickSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Splash.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/OrthoCameraFollow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/CutsceneSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/WalkCycle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" />
       </list>
     </option>
   </component>

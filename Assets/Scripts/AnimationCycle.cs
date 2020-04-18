@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
  
 [RequireComponent(typeof(MeshRenderer))]
 public class AnimationCycle : MonoBehaviour {
@@ -6,6 +7,8 @@ public class AnimationCycle : MonoBehaviour {
     public Mesh[] meshes;
  
     private MeshFilter m_meshFilter;
+
+    [SerializeField] private float m_multiplier = 1.0f;
 
     public bool IsPlaying
     {
@@ -38,7 +41,7 @@ public class AnimationCycle : MonoBehaviour {
         if (!m_isPlaying)
             return;
         
-        int index = ((int)(Time.time * fps)) % meshes.Length;
+        int index = ((int)(Time.time * fps * m_multiplier)) % meshes.Length;
         m_meshFilter.sharedMesh = meshes [index];
     }
 }
