@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
  
 [RequireComponent(typeof(MeshRenderer))]
-public class WalkCycle : MonoBehaviour {
+public class AnimationCycle : MonoBehaviour {
     public float fps = 8f;
     public Mesh[] meshes;
  
-    MeshFilter meshFilter;
+    private MeshFilter m_meshFilter;
 
     public bool IsPlaying
     {
@@ -21,16 +21,16 @@ public class WalkCycle : MonoBehaviour {
         }
     }
 
-    private bool m_isPlaying = false;
+    public bool m_isPlaying = false;
  
     void Awake()
     {
-        meshFilter = GetComponent<MeshFilter> ();
+        m_meshFilter = GetComponent<MeshFilter> ();
     }
 
     public void Stop()
     {
-        meshFilter.sharedMesh = meshes [0];
+        m_meshFilter.sharedMesh = meshes [0];
     }
  
     void Update()
@@ -39,6 +39,6 @@ public class WalkCycle : MonoBehaviour {
             return;
         
         int index = ((int)(Time.time * fps)) % meshes.Length;
-        meshFilter.sharedMesh = meshes [index];
+        m_meshFilter.sharedMesh = meshes [index];
     }
 }

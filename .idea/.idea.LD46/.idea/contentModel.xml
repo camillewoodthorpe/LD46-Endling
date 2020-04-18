@@ -31,6 +31,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AnimationCycle.cs" t="Include" />
           <e p="CaptionsManager.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Interactions" t="Include">
@@ -39,7 +40,6 @@
           <e p="Player" t="Include">
             <e p="OrthoCameraFollow.cs" t="Include" />
             <e p="Walk.cs" t="Include" />
-            <e p="WalkCycle.cs" t="Include" />
           </e>
           <e p="Sequences" t="Include">
             <e p="ColliderClickSequence.cs" t="Include" />

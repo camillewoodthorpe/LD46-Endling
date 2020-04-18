@@ -9,7 +9,7 @@ public class Walk : MonoBehaviour
     
     [SerializeField] private GameObject m_walkCirclePrefab;
     [SerializeField] private float m_walkSpeed = 2.0f;
-    [SerializeField] private WalkCycle m_walkCycle;
+    [SerializeField] private AnimationCycle m_walkCycle;
 
     private Vector3 originalScale = new Vector3();
 
