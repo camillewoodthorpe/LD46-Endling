@@ -3,12 +3,47 @@
   <component name="ChangeListManager">
     <list default="true" id="11615ce6-6d0e-4158-8051-f1cb0a8e86bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Endling.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Endling.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/WalkCircle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Characters/WalkCircle.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Endlings/EndlingBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Endlings/EndlingBox.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist2.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist2.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist2.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-00.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-00.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-00.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-00.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-00.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-01.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-01.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-01.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-02.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-02.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-02.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-03.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-03.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-03.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-03.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-04.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-04.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-04.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-04.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +56,12 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sequences/ColliderClickSequence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sequences/CutsceneSequence.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05F2AC9C-8847-4269-9276-5A22EF6D94CA/d0/82e43741/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Splash.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/OrthoCameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/OrthoCameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sequences/Sequence.cs" root0="FORCE_HIGHLIGHTING" />
@@ -44,10 +79,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/OrthoCameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/CutsceneSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/WalkCycle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" />
       </list>
     </option>
   </component>
@@ -72,10 +107,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12132">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="12132" />
+      <option name="pid" />
       <method v="2" />
     </configuration>
   </component>

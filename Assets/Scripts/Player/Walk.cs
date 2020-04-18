@@ -52,7 +52,7 @@ public class Walk : MonoBehaviour
         
         // Animate
         m_audioSource.Play();
-        m_walkCycle.IsPlaying = true;
+        m_walkCycle.StartCycle();
         iTween.MoveTo(gameObject,
             iTween.Hash("x", levelTarget.x, "y", levelTarget.y, "z", levelTarget.z, "time", duration, "oncomplete", "OnFinish", "easetype", iTween.EaseType.linear));
         
@@ -67,6 +67,6 @@ public class Walk : MonoBehaviour
     private void OnFinish()
     {
         m_audioSource.Stop();
-        m_walkCycle.IsPlaying = false;
+        m_walkCycle.StopCycle();
     }
 }

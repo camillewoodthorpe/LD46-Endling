@@ -6,33 +6,20 @@ public class AnimationCycle : MonoBehaviour {
     public float fps = 8f;
     public Mesh[] meshes;
  
-    private MeshFilter m_meshFilter;
+    [SerializeField] private MeshFilter m_meshFilter;
 
     [SerializeField] private float m_multiplier = 1.0f;
+    
+    private bool m_isPlaying = false;
 
-    public bool IsPlaying
+    public void StartCycle()
     {
-        set
-        {
-            if (value == true)
-                m_isPlaying = true;
-            else
-            {
-                m_isPlaying = false;
-                Stop();
-            }
-        }
+        m_isPlaying = true;
     }
-
-    public bool m_isPlaying = false;
- 
-    void Awake()
+    
+    public void StopCycle()
     {
-        m_meshFilter = GetComponent<MeshFilter> ();
-    }
-
-    public void Stop()
-    {
+        m_isPlaying = false;
         m_meshFilter.sharedMesh = meshes [0];
     }
  
