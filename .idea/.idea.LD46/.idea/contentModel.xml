@@ -45,6 +45,7 @@
             <e p="ColliderClickSequence.cs" t="Include" />
             <e p="CutsceneSequence.cs" t="Include" />
             <e p="Sequence.cs" t="Include" />
+            <e p="ToggleClickabilitySequence.cs" t="Include" />
             <e p="ToggleGameobjectSequence.cs" t="Include" />
           </e>
           <e p="Splash.cs" t="Include" />

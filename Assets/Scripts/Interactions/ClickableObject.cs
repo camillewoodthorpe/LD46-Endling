@@ -6,7 +6,7 @@ using Random = System.Random;
 
 public class ClickableObject : MonoBehaviour
 {
-    public static bool CanClickOnObjects = true;
+    public static bool CanClickOnObjects = false;
     
     public event EventHandler Clicked;
 
