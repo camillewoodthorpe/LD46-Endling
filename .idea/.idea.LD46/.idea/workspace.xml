@@ -3,47 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="11615ce6-6d0e-4158-8051-f1cb0a8e86bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist.mtl.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist2.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist2.mtl.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist2.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-00.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-00.mtl.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-00.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-00.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-00.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-01.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-01.mtl.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-01.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-01.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-02.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-02.mtl.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-02.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-02.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-03.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-03.mtl.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-03.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-03.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-04.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-04.mtl.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-04.obj.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist_Animated-04.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Endlings/EndlingBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Endlings/EndlingBox.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

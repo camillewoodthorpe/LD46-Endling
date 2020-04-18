@@ -12,6 +12,17 @@ public class AnimationCycle : MonoBehaviour {
     
     private bool m_isPlaying = false;
 
+    [SerializeField] private bool m_playOnStart = false;
+
+
+    void Start()
+    {
+        if (m_playOnStart)
+        {
+            StartCycle();
+        }
+    }
+
     public void StartCycle()
     {
         m_isPlaying = true;
