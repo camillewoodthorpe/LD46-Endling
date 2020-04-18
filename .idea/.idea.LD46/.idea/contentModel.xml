@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\Camille\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Camille\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_LD46.133929626.00" t="ExcludeRecursive" />
-    <e p="E:\Projects\Ludum Dare\46\LD46\LD46\LD46" t="IncludeRecursive">
+    <e p="C:\Users\Camille\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_LD46.2086237482.00" t="ExcludeRecursive" />
+    <e p="E:\Projects\Ludum Dare\46\LD46\LD46" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
@@ -14,8 +14,8 @@
             <e p="ClickableObject.cs" t="Include" />
           </e>
           <e p="Sequences" t="Include">
-            <e p="CaptionsSequence.cs" t="Include" />
             <e p="ColliderClickSequence.cs" t="Include" />
+            <e p="CutsceneSequence.cs" t="Include" />
             <e p="Sequence.cs" t="Include" />
           </e>
         </e>
