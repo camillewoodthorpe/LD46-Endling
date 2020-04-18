@@ -26,6 +26,8 @@ public class CaptionsManager : MonoBehaviour
     
     public void ChangeCaptions(string text)
     {
+        if(m_captionsCanvas.activeSelf == false && !string.IsNullOrEmpty((text)))
+            m_captionsCanvas.SetActive(true);
         m_captions.text = text;
     }
 

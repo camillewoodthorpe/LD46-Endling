@@ -9,7 +9,7 @@ public class CutsceneSequence : Sequence
     public class CutsceneAnimation
     {
         public Animator Animator;
-        public Animation AnimationClip;
+        public string AnimationName;
     }
     
     [Serializable]
@@ -31,7 +31,7 @@ public class CutsceneSequence : Sequence
     
     public override void PlaySequence()
     {
-        CaptionsManager.Instance.ToggleCaptions(true);
+        //CaptionsManager.Instance.ToggleCaptions(true);
 
         m_isActive = true;
         m_activeCutsceneIndex = 0;
@@ -45,6 +45,11 @@ public class CutsceneSequence : Sequence
 
         if (DateTime.UtcNow >= m_cutsceneStartTime.AddSeconds(m_cutscenes[m_activeCutsceneIndex].DurationSeconds))
         {
+            foreach (CutsceneAnimation animation in m_cutscenes[m_activeCutsceneIndex].Animations)
+            {
+                animation.Animator.SetBool(animation.AnimationName, false);
+            }
+            
             if (m_cutscenes.Count <= m_activeCutsceneIndex + 1)
             {
                 OnFinished();
@@ -64,6 +69,11 @@ public class CutsceneSequence : Sequence
         CaptionsManager.Instance.ChangeCaptions(m_cutscenes[m_activeCutsceneIndex].CaptionText);
         if (m_cutscenes[m_activeCutsceneIndex].Audio != null)
             CaptionsManager.Instance.PlayAudio(m_cutscenes[m_activeCutsceneIndex].Audio);
+
+        foreach (CutsceneAnimation animation in m_cutscenes[m_activeCutsceneIndex].Animations)
+        {
+            animation.Animator.SetBool(animation.AnimationName, true);
+        }
     }
 
     private void OnFinished()

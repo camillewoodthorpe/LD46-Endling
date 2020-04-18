@@ -6,10 +6,17 @@
     <e p="E:\Projects\Ludum Dare\46\LD46\LD46" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Fonts" t="Include">
+          <e p="Aileron" t="Include">
+            <e p="license.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Materials" t="Include">
+          <e p="Emissive.shader" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="CaptionsManager.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
-          <e p="Interaction.cs" t="Include" />
           <e p="Interactions" t="Include">
             <e p="ClickableObject.cs" t="Include" />
           </e>
@@ -18,6 +25,7 @@
             <e p="CutsceneSequence.cs" t="Include" />
             <e p="Sequence.cs" t="Include" />
           </e>
+          <e p="Splash.cs" t="Include" />
         </e>
       </e>
       <e p="LD46.sln" t="IncludeFlat" />
