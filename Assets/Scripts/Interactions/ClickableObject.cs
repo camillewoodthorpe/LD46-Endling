@@ -10,6 +10,8 @@ public class ClickableObject : MonoBehaviour
     
     public event EventHandler Clicked;
 
+    private int m_playCount = 0;
+
     [Serializable]
     public class Audio
     {
@@ -29,7 +31,7 @@ public class ClickableObject : MonoBehaviour
             Clicked.Invoke(this, null);
         
         Reset();
-        StartCoroutine(PlayRandomClip());
+        StartCoroutine(PlayClip());
     }
 
     private void Reset()
@@ -43,14 +45,9 @@ public class ClickableObject : MonoBehaviour
             m_audioSource.Stop();
     }
 
-    private IEnumerator PlayRandomClip()
+    private IEnumerator PlayClip()
     {
-        Random rand = new Random();
-
-        int randomIndex = rand.Next(0, AudioClips.Count);
-
-        Audio currentAudio = AudioClips[randomIndex];
-
+        Audio currentAudio = AudioClips[m_playCount];
         if (m_audioSource != null)
         {
             m_audioSource.clip = currentAudio.Clip;
@@ -65,8 +62,12 @@ public class ClickableObject : MonoBehaviour
         {
             CaptionsManager.Instance.ChangeCaptions(currentAudio.Caption);
         }
+        
+        m_playCount++;
+        if (m_playCount >= AudioClips.Count)
+            m_playCount = 0;
 
-        yield return new WaitForSeconds(AudioClips[randomIndex].Clip.length);
+        yield return new WaitForSeconds(AudioClips[m_playCount].Clip.length);
         CaptionsManager.Instance.ToggleCaptions(false);
     }
 }

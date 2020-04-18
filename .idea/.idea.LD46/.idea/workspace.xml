@@ -2,36 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11615ce6-6d0e-4158-8051-f1cb0a8e86bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Come on.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Come on.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Dont worry.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Dont worry.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Hmm.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Hmm.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Hold tight.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Hold tight.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/I feel like you know things.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/I feel like you know things.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/I wonder.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/I wonder.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Maybe I can open this.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Maybe I can open this.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/So much death.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/So much death.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/This looks dangerous.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/This looks dangerous.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/We need to get out of here.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/We need to get out of here.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Wow.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Wow.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Yes we're ready.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Yes we're ready.mp3.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Endling.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Endling.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/WalkCircle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Characters/WalkCircle.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Models/Endlings/EndlingBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Endlings/EndlingBox.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,10 +44,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/OrthoCameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/CutsceneSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/WalkCycle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" />
       </list>
     </option>
   </component>
@@ -95,10 +72,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12132">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="12132" />
       <method v="2" />
     </configuration>
   </component>
@@ -115,70 +92,70 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="440" height="464" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1587182677781" />
-    <state width="1877" height="202" key="GridCell.Tab.0.bottom" timestamp="1587182664845">
+    <state width="1877" height="202" key="GridCell.Tab.0.bottom" timestamp="1587216589662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587182664845" />
-    <state width="1877" height="202" key="GridCell.Tab.0.center" timestamp="1587182664845">
+    <state width="1877" height="202" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589662" />
+    <state width="1877" height="202" key="GridCell.Tab.0.center" timestamp="1587216589662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587182664845" />
-    <state width="1877" height="202" key="GridCell.Tab.0.left" timestamp="1587182664844">
+    <state width="1877" height="202" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589662" />
+    <state width="1877" height="202" key="GridCell.Tab.0.left" timestamp="1587216589662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587182664844" />
-    <state width="1877" height="202" key="GridCell.Tab.0.right" timestamp="1587182664845">
+    <state width="1877" height="202" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589662" />
+    <state width="1877" height="202" key="GridCell.Tab.0.right" timestamp="1587216589662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587182664845" />
-    <state width="1877" height="202" key="GridCell.Tab.1.bottom" timestamp="1587182669705">
+    <state width="1877" height="202" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589662" />
+    <state width="1877" height="202" key="GridCell.Tab.1.bottom" timestamp="1587216589662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587182669705" />
-    <state width="1877" height="202" key="GridCell.Tab.1.center" timestamp="1587182669705">
+    <state width="1877" height="202" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589662" />
+    <state width="1877" height="202" key="GridCell.Tab.1.center" timestamp="1587216589662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587182669705" />
-    <state width="1877" height="202" key="GridCell.Tab.1.left" timestamp="1587182669705">
+    <state width="1877" height="202" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589662" />
+    <state width="1877" height="202" key="GridCell.Tab.1.left" timestamp="1587216589662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587182669705" />
-    <state width="1877" height="202" key="GridCell.Tab.1.right" timestamp="1587182669705">
+    <state width="1877" height="202" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589662" />
+    <state width="1877" height="202" key="GridCell.Tab.1.right" timestamp="1587216589662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587182669705" />
-    <state width="1877" height="202" key="GridCell.Tab.2.bottom" timestamp="1587182664678">
+    <state width="1877" height="202" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589662" />
+    <state width="1877" height="202" key="GridCell.Tab.2.bottom" timestamp="1587216589663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587182664678" />
-    <state width="1877" height="202" key="GridCell.Tab.2.center" timestamp="1587182664677">
+    <state width="1877" height="202" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589663" />
+    <state width="1877" height="202" key="GridCell.Tab.2.center" timestamp="1587216589663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587182664677" />
-    <state width="1877" height="202" key="GridCell.Tab.2.left" timestamp="1587182664677">
+    <state width="1877" height="202" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589663" />
+    <state width="1877" height="202" key="GridCell.Tab.2.left" timestamp="1587216589662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587182664677" />
-    <state width="1877" height="202" key="GridCell.Tab.2.right" timestamp="1587182664678">
+    <state width="1877" height="202" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589662" />
+    <state width="1877" height="202" key="GridCell.Tab.2.right" timestamp="1587216589663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587182664678" />
-    <state width="1877" height="202" key="GridCell.Tab.3.bottom" timestamp="1587182664678">
+    <state width="1877" height="202" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589663" />
+    <state width="1877" height="202" key="GridCell.Tab.3.bottom" timestamp="1587216589663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587182664678" />
-    <state width="1877" height="202" key="GridCell.Tab.3.center" timestamp="1587182664678">
+    <state width="1877" height="202" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589663" />
+    <state width="1877" height="202" key="GridCell.Tab.3.center" timestamp="1587216589663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587182664678" />
-    <state width="1877" height="202" key="GridCell.Tab.3.left" timestamp="1587182664678">
+    <state width="1877" height="202" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589663" />
+    <state width="1877" height="202" key="GridCell.Tab.3.left" timestamp="1587216589663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587182664678" />
-    <state width="1877" height="202" key="GridCell.Tab.3.right" timestamp="1587182664678">
+    <state width="1877" height="202" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589663" />
+    <state width="1877" height="202" key="GridCell.Tab.3.right" timestamp="1587216589663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587182664678" />
+    <state width="1877" height="202" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589663" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1587198149242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -242,6 +219,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs</url>
+          <line>49</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" initialLine="49">
+            <startOffsets>
+              <option value="1084" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1129" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -57,7 +57,7 @@ public class Walk : MonoBehaviour
             iTween.Hash("x", levelTarget.x, "y", levelTarget.y, "z", levelTarget.z, "time", duration, "oncomplete", "OnFinish", "easetype", iTween.EaseType.linear));
         
         // Instantiate walk circle
-        Vector3 walkCircleTarget = new Vector3(levelTarget.x, 0.1f, levelTarget.z);
+        Vector3 walkCircleTarget = new Vector3(levelTarget.x, 0.05f, levelTarget.z);
         GameObject.Instantiate(m_walkCirclePrefab, walkCircleTarget, Quaternion.identity);
         
         // Move camera
