@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11615ce6-6d0e-4158-8051-f1cb0a8e86bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Camera/Camera Animator.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Camera/Camera Animator.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Camera/Every day I watched.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Camera/Every day I watched.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/00 - Splash.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/00 - Splash.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sequences/ToggleGameObjectSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sequences/ToggleGameObjectSequence.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +22,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Splash.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/OrthoCameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactions/Countdown.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sequences/ToggleClickabilitySequence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -48,11 +45,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/CutsceneSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/WalkCycle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/ToggleGameObjectSequence.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/ToggleClickabilitySequence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactions/Countdown.cs" />
       </list>
     </option>
   </component>
@@ -77,10 +75,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12132">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="12132" />
       <method v="2" />
     </configuration>
   </component>
@@ -97,38 +95,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="440" height="464" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1587182677781" />
-    <state width="1877" height="202" key="GridCell.Tab.0.bottom" timestamp="1587216589662">
+    <state width="1877" height="202" key="GridCell.Tab.0.bottom" timestamp="1587232508460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589662" />
-    <state width="1877" height="202" key="GridCell.Tab.0.center" timestamp="1587216589662">
+    <state width="1877" height="202" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587232508460" />
+    <state width="1877" height="202" key="GridCell.Tab.0.center" timestamp="1587232508460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589662" />
-    <state width="1877" height="202" key="GridCell.Tab.0.left" timestamp="1587216589662">
+    <state width="1877" height="202" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587232508460" />
+    <state width="1877" height="202" key="GridCell.Tab.0.left" timestamp="1587232508459">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589662" />
-    <state width="1877" height="202" key="GridCell.Tab.0.right" timestamp="1587216589662">
+    <state width="1877" height="202" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587232508459" />
+    <state width="1877" height="202" key="GridCell.Tab.0.right" timestamp="1587232508460">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589662" />
-    <state width="1877" height="202" key="GridCell.Tab.1.bottom" timestamp="1587216589662">
+    <state width="1877" height="202" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587232508460" />
+    <state width="1877" height="202" key="GridCell.Tab.1.bottom" timestamp="1587232516607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589662" />
-    <state width="1877" height="202" key="GridCell.Tab.1.center" timestamp="1587216589662">
+    <state width="1877" height="202" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587232516607" />
+    <state width="1877" height="202" key="GridCell.Tab.1.center" timestamp="1587232516606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589662" />
-    <state width="1877" height="202" key="GridCell.Tab.1.left" timestamp="1587216589662">
+    <state width="1877" height="202" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587232516606" />
+    <state width="1877" height="202" key="GridCell.Tab.1.left" timestamp="1587232516606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589662" />
-    <state width="1877" height="202" key="GridCell.Tab.1.right" timestamp="1587216589662">
+    <state width="1877" height="202" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587232516606" />
+    <state width="1877" height="202" key="GridCell.Tab.1.right" timestamp="1587232516606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="202" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587216589662" />
+    <state width="1877" height="202" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587232516606" />
     <state width="1877" height="202" key="GridCell.Tab.2.bottom" timestamp="1587216589663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -174,69 +172,30 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs</url>
-          <line>15</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" initialLine="15">
-            <startOffsets>
-              <option value="388" />
-            </startOffsets>
-            <endOffsets>
-              <option value="439" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs</url>
-          <line>17</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" initialLine="17">
-            <startOffsets>
-              <option value="457" />
-            </startOffsets>
-            <endOffsets>
-              <option value="474" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs</url>
-          <line>38</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" initialLine="38">
-            <startOffsets>
-              <option value="1002" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1025" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs</url>
-          <line>42</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" initialLine="42">
-            <startOffsets>
-              <option value="1071" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1104" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs</url>
           <line>49</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" initialLine="49">
             <startOffsets>
-              <option value="1084" />
+              <option value="1085" />
             </startOffsets>
             <endOffsets>
-              <option value="1129" />
+              <option value="1130" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Interactions/Countdown.cs</url>
+          <line>23</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Interactions/Countdown.cs" initialLine="23">
+            <startOffsets>
+              <option value="553" />
+            </startOffsets>
+            <endOffsets>
+              <option value="655" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
