@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="11615ce6-6d0e-4158-8051-f1cb0a8e86bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fonts/Pixel Digivolve Italic.otf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fonts/Pixel Digivolve Italic.otf.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fonts/Pixel Digivolve.otf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fonts/Pixel Digivolve.otf.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sequences/CutsceneSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sequences/CutsceneSequence.cs" afterDir="false" />
@@ -39,13 +41,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interaction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/Sequence.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/CaptionsSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/ColliderClickSequence.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/CutsceneSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Splash.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/CutsceneSequence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" />
       </list>
     </option>
   </component>
