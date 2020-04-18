@@ -39,6 +39,7 @@
           <e p="Player" t="Include">
             <e p="OrthoCameraFollow.cs" t="Include" />
             <e p="Walk.cs" t="Include" />
+            <e p="WalkCycle.cs" t="Include" />
           </e>
           <e p="Sequences" t="Include">
             <e p="ColliderClickSequence.cs" t="Include" />

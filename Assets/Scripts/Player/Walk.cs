@@ -5,9 +5,11 @@ using UnityEngine;
 public class Walk : MonoBehaviour
 {
     [SerializeField] private OrthoCameraFollow m_cameraFollow;
+    [SerializeField] private AudioSource m_audioSource;
     
     [SerializeField] private GameObject m_walkCirclePrefab;
     [SerializeField] private float m_walkSpeed = 2.0f;
+    [SerializeField] private WalkCycle m_walkCycle;
 
     private Vector3 originalScale = new Vector3();
 
@@ -36,7 +38,7 @@ public class Walk : MonoBehaviour
     private void WalkToTarget(Vector3 target)
     {
         Vector3 levelTarget = new Vector3(target.x, transform.position.y, target.z);
-        float duration = Vector3.Distance(levelTarget, transform.position) * m_walkSpeed;
+        float duration = Vector3.Distance(levelTarget, transform.position) / m_walkSpeed;
 
         // Flip sprite to face direction
         if (levelTarget.x > transform.position.x)
@@ -49,7 +51,10 @@ public class Walk : MonoBehaviour
         }
         
         // Animate
-        iTween.MoveTo(gameObject, levelTarget, duration);
+        m_audioSource.Play();
+        m_walkCycle.IsPlaying = true;
+        iTween.MoveTo(gameObject,
+            iTween.Hash("x", levelTarget.x, "y", levelTarget.y, "z", levelTarget.z, "time", duration, "oncomplete", "OnFinish", "easetype", iTween.EaseType.linear));
         
         // Instantiate walk circle
         Vector3 walkCircleTarget = new Vector3(levelTarget.x, 0.1f, levelTarget.z);
@@ -57,5 +62,11 @@ public class Walk : MonoBehaviour
         
         // Move camera
         m_cameraFollow.OnWalk(walkCircleTarget);
+    }
+
+    private void OnFinish()
+    {
+        m_audioSource.Stop();
+        m_walkCycle.IsPlaying = false;
     }
 }

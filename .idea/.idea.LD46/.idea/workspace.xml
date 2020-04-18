@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11615ce6-6d0e-4158-8051-f1cb0a8e86bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Endlings/EndlingBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Endlings/EndlingBox.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Characters/Scientist.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Characters/Scientist.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sequences/CutsceneSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sequences/CutsceneSequence.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +25,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/OrthoCameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/WalkCycle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sequences/Sequence.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -40,9 +41,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/ColliderClickSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Splash.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/OrthoCameraFollow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/CutsceneSequence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/WalkCycle.cs" />
       </list>
     </option>
   </component>
