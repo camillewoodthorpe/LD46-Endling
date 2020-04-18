@@ -11,14 +11,21 @@ public class CutsceneSequence : Sequence
         public Animator Animator;
         public string AnimationName;
     }
+    [Serializable]
+    public class CutsceneAudio
+    {
+        public AudioSource AudioSource;
+        public AudioClip AudioClip;
+    }
     
     [Serializable]
     public class Cutscene
     {
         public string CaptionText;
-        public AudioClip Audio;
+        public AudioClip CaptionsAudio;
         public float DurationSeconds;
         public List<CutsceneAnimation> Animations = new List<CutsceneAnimation>();
+        public List<CutsceneAudio> AudioClips = new List<CutsceneAudio>();
     }
     [SerializeField] private List<Cutscene> m_cutscenes = new List<Cutscene>();
 
@@ -67,8 +74,16 @@ public class CutsceneSequence : Sequence
         m_cutsceneStartTime = DateTime.UtcNow;
 
         CaptionsManager.Instance.ChangeCaptions(m_cutscenes[m_activeCutsceneIndex].CaptionText);
-        if (m_cutscenes[m_activeCutsceneIndex].Audio != null)
-            CaptionsManager.Instance.PlayAudio(m_cutscenes[m_activeCutsceneIndex].Audio);
+        if (m_cutscenes[m_activeCutsceneIndex].CaptionsAudio != null)
+        {
+            CaptionsManager.Instance.PlayAudio(m_cutscenes[m_activeCutsceneIndex].CaptionsAudio);
+        }
+        
+        foreach (CutsceneAudio audio in m_cutscenes[m_activeCutsceneIndex].AudioClips)
+        {
+            audio.AudioSource.clip = audio.AudioClip;
+            audio.AudioSource.Play();
+        }
 
         foreach (CutsceneAnimation animation in m_cutscenes[m_activeCutsceneIndex].Animations)
         {
