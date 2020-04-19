@@ -42,6 +42,7 @@
             <e p="CaptionsManager.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
             <e p="LabManager.cs" t="Include" />
+            <e p="RestartManager.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="OrthoCameraFollow.cs" t="Include" />

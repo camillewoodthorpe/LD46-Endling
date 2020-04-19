@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     {
         m_activeIndex = index;
         m_sequences[m_activeIndex].FinishedSequence += OnFinishedSequence;
-        m_sequences[m_activeIndex].PlaySequence();
+        m_sequences[m_activeIndex].PrePlaySequence();
     }
     
     private void OnFinishedSequence(object sender, EventArgs args)

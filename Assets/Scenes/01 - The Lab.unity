@@ -164,6 +164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 338ff7a672118784e93057f352e8c781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkipOnRestart: 0
+  OnlyOnRestart: 0
   m_state: 1
 --- !u!4 &85628374 stripped
 Transform:
@@ -284,6 +286,66 @@ Transform:
   m_Father: {fileID: 1114240610}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &258045499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 258045500}
+  - component: {fileID: 258045501}
+  m_Layer: 0
+  m_Name: Start Lab (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &258045500
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258045499}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1634097068}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &258045501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258045499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2741edb7b95b3458f05cb10fca0390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkipOnRestart: 0
+  OnlyOnRestart: 1
+  m_delay: 0
+  Action:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1575848356}
+        m_MethodName: StartFiveMinCountdown
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &259562758 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8852069444110548052, guid: b5139263353c2c240b08e459c623f22f,
@@ -333,6 +395,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae2741edb7b95b3458f05cb10fca0390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkipOnRestart: 1
+  OnlyOnRestart: 0
   m_delay: 0
   Action:
     m_PersistentCalls:
@@ -606,6 +670,7 @@ Transform:
   - {fileID: 1634097068}
   - {fileID: 686931398}
   - {fileID: 1575848355}
+  - {fileID: 833484152}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -652,6 +717,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19aaad860962c56498f7cda38c350f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkipOnRestart: 0
+  OnlyOnRestart: 0
   m_delay: 0
   m_object: {fileID: 8852069442875825436}
   m_state: 1
@@ -777,6 +844,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a066af67333dd3a4f93562480304cc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkipOnRestart: 1
+  OnlyOnRestart: 0
   m_cutscenes:
   - CaptionText: I had to save it.
     CaptionsAudio: {fileID: 8300000, guid: 46645952a25661f48a86d18e6bf3c62c, type: 3}
@@ -6644,6 +6713,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19aaad860962c56498f7cda38c350f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkipOnRestart: 1
+  OnlyOnRestart: 0
   m_delay: 0
   m_object: {fileID: 1114240609}
   m_state: 1
@@ -6765,6 +6836,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19aaad860962c56498f7cda38c350f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkipOnRestart: 1
+  OnlyOnRestart: 0
   m_delay: 0
   m_object: {fileID: 1744956980}
   m_state: 1
@@ -7110,6 +7183,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812515842}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &833484151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 833484152}
+  m_Layer: 0
+  m_Name: RestartManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &833484152
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833484151}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 359442638}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &837182673
 GameObject:
   m_ObjectHideFlags: 0
@@ -7443,6 +7546,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19aaad860962c56498f7cda38c350f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkipOnRestart: 1
+  OnlyOnRestart: 0
   m_delay: 0
   m_object: {fileID: 1744956980}
   m_state: 0
@@ -8148,6 +8253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19aaad860962c56498f7cda38c350f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkipOnRestart: 0
+  OnlyOnRestart: 0
   m_delay: 0
   m_object: {fileID: 1178764081}
   m_state: 0
@@ -8771,6 +8878,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19aaad860962c56498f7cda38c350f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkipOnRestart: 0
+  OnlyOnRestart: 0
   m_delay: 0
   m_object: {fileID: 2046539892}
   m_state: 1
@@ -9241,6 +9350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19aaad860962c56498f7cda38c350f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkipOnRestart: 1
+  OnlyOnRestart: 0
   m_delay: 0
   m_object: {fileID: 585717007}
   m_state: 0
@@ -9664,6 +9775,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a066af67333dd3a4f93562480304cc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkipOnRestart: 1
+  OnlyOnRestart: 0
   m_cutscenes:
   - CaptionText: 
     CaptionsAudio: {fileID: 0}
@@ -10105,6 +10218,8 @@ MonoBehaviour:
   m_endlingGas: {fileID: 8852069442875825437}
   m_successGas: {fileID: 689090111}
   m_coughing: {fileID: 8300000, guid: 1be3125fc60c44d4186336827ab13f4c, type: 3}
+  m_thatLooksDangerous: {fileID: 8300000, guid: b7f31a8d8ed9bc44ea93bdf2948d1def,
+    type: 3}
 --- !u!82 &1575848357
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10389,6 +10504,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19aaad860962c56498f7cda38c350f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkipOnRestart: 1
+  OnlyOnRestart: 0
   m_delay: 0
   m_object: {fileID: 1178764081}
   m_state: 1
@@ -10446,6 +10563,7 @@ Transform:
   - {fileID: 361240015}
   - {fileID: 21385851}
   - {fileID: 272499495}
+  - {fileID: 258045500}
   m_Father: {fileID: 359442638}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10900,6 +11018,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19aaad860962c56498f7cda38c350f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkipOnRestart: 1
+  OnlyOnRestart: 0
   m_delay: 0
   m_object: {fileID: 1114240609}
   m_state: 0
@@ -11801,6 +11921,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a066af67333dd3a4f93562480304cc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkipOnRestart: 1
+  OnlyOnRestart: 0
   m_cutscenes:
   - CaptionText: The last of its kind. An intelligent species.
     CaptionsAudio: {fileID: 8300000, guid: b492938c46e616c4ba2b7fb4a14dd3af, type: 3}

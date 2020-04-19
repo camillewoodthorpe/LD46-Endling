@@ -39,6 +39,7 @@ public class LabManager : MonoBehaviour
     [SerializeField] private GameObject m_endlingGas;
     [SerializeField] private GameObject m_successGas;
     [SerializeField] private AudioClip m_coughing;
+    [SerializeField] private AudioClip m_thatLooksDangerous;
     
 
     void Update()
@@ -57,6 +58,17 @@ public class LabManager : MonoBehaviour
         {
             StartCoroutine(TooLate());
         }
+    }
+
+    public void StartCustomCountdown()
+    {
+        if (RestartManager.RemainingTime < new TimeSpan(0, 0, 2, 0))
+        {
+            RestartManager.RemainingTime = new TimeSpan(0, 0, 2, 0);
+        }
+        
+        m_projectedTime = DateTime.UtcNow.AddMinutes(RestartManager.RemainingTime.Minutes);
+        m_isCountingDown = true;
     }
     
     public void StartFiveMinCountdown()
@@ -105,13 +117,15 @@ public class LabManager : MonoBehaviour
     public void OpenedGasValve()
     {
         m_isCountingDown = false;
+        RestartManager.RemainingTime = m_projectedTime - DateTime.UtcNow;
+        
         if (m_guardInRange)
         {
             Caught();
         }
         else if (!m_guardInRange && !m_wearingGasMask)
         {
-            Oops();
+            StartCoroutine(Oops());
         }
         else
         {
@@ -152,17 +166,29 @@ public class LabManager : MonoBehaviour
         StartCoroutine(Restart("Scenes/04 - Fail - Caught", 3.0f));
     }
 
-    public void Oops()
+    public IEnumerator Oops()
     {
         Debug.Log("Oops!");
         ToggleClickability(false);
+
+        m_valve.localEulerAngles = new Vector3(0,0,-90);
+        m_successGas.SetActive(true);
         
-        StartCoroutine(Restart("Scenes/04 - Fail - Gassed Out", 0));
+        yield return new WaitForSeconds(2.0f);
+        
+        CaptionsManager.Instance.ChangeCaptions("This looks dangerous...");
+        CaptionsManager.Instance.PlayAudio(m_thatLooksDangerous);
+        
+        yield return new WaitForSeconds(3.0f);
+        
+        StartCoroutine(Restart("Scenes/04 - Fail - Gassed Out", 0f));
     }
 
     public IEnumerator TooLate()
     {
         m_isCountingDown = false;
+        RestartManager.RemainingTime = m_projectedTime - DateTime.UtcNow;
+        
         Debug.Log("TooLate!");
 
         ToggleClickability(false);
@@ -175,6 +201,8 @@ public class LabManager : MonoBehaviour
 
     public IEnumerator Restart(string sceneToLoad, float delay)
     {
+        RestartManager.HasRestarted = true;
+        
         m_isCountingDown = false;
         Tooltip.Instance.HideTooltip();
         
