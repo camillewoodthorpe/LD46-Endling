@@ -55,7 +55,7 @@ public class LabManager : MonoBehaviour
         }
         else if (DateTime.UtcNow >= m_projectedTime)
         {
-            TooLate();
+            StartCoroutine(TooLate());
         }
     }
     
@@ -160,13 +160,15 @@ public class LabManager : MonoBehaviour
         StartCoroutine(Restart("Scenes/04 - Fail - Gassed Out", 0));
     }
 
-    public void TooLate()
+    public IEnumerator TooLate()
     {
         m_isCountingDown = false;
         Debug.Log("TooLate!");
 
         ToggleClickability(false);
         m_endlingGas.SetActive(true);
+        
+        yield return new WaitForSeconds(5.0f);
         
         StartCoroutine(Restart("Scenes/04 - Fail - Too Late", 0));
     }
