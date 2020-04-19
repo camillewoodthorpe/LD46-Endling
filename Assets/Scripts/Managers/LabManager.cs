@@ -39,7 +39,7 @@ public class LabManager : MonoBehaviour
     [SerializeField] private GameObject m_endlingGas;
     [SerializeField] private GameObject m_successGas;
     [SerializeField] private AudioClip m_coughing;
-    [SerializeField] private AudioClip m_thatLooksDangerous;
+    [SerializeField] private AudioClip m_playerCough;
     
 
     void Update()
@@ -171,8 +171,7 @@ public class LabManager : MonoBehaviour
         
         yield return new WaitForSeconds(2.0f);
         
-        CaptionsManager.Instance.ChangeCaptions("This looks dangerous...");
-        CaptionsManager.Instance.PlayAudio(m_thatLooksDangerous);
+        CaptionsManager.Instance.PlayAudio(m_playerCough);
         
         yield return new WaitForSeconds(3.0f);
         
