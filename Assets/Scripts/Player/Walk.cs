@@ -28,10 +28,18 @@ public class Walk : MonoBehaviour
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         
-            if (Physics.Raycast(ray, out hit)) {
+            if (Physics.Raycast(ray, out hit))
+            {
                 if (hit.transform.gameObject.CompareTag("Ground"))
                 {
-                    WalkToTarget(hit.point);
+                    // Check if anything is in the way
+                    Vector3 playerPosHigher = new Vector3(transform.position.x, transform.position.y + 0.01f, transform.position.z);
+                    RaycastHit hitInfo;
+                    int groundLayer = LayerMask.NameToLayer( "Ground" );
+                    if (!Physics.Linecast(playerPosHigher, hit.point, out hitInfo, groundLayer))
+                    {
+                        WalkToTarget(hit.point);
+                    }
                 }
             }
         }

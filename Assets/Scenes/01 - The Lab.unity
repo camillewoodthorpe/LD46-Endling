@@ -7036,6 +7036,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1822416966}
     m_Modifications:
+    - target: {fileID: 167610395605458927, guid: 1b059145cb6744549b5b23f01522670a,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 6.6
+      objectReference: {fileID: 0}
     - target: {fileID: 8852069444110548052, guid: 1b059145cb6744549b5b23f01522670a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7044,7 +7049,7 @@ PrefabInstance:
     - target: {fileID: 8852069444110548052, guid: 1b059145cb6744549b5b23f01522670a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.38
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 8852069444110548052, guid: 1b059145cb6744549b5b23f01522670a,
         type: 3}
@@ -10734,7 +10739,7 @@ GameObject:
   - component: {fileID: 1750936920}
   - component: {fileID: 1750936919}
   - component: {fileID: 1750936918}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -12158,6 +12163,21 @@ PrefabInstance:
       propertyPath: m_walkCycle
       value: 
       objectReference: {fileID: 2534866581649947157}
+    - target: {fileID: 1264254305684641756, guid: 17433bd9b0ebfb344a6649a684622e70,
+        type: 3}
+      propertyPath: laserLineRenderer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515458637510975237, guid: 17433bd9b0ebfb344a6649a684622e70,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3649656423410866587, guid: 17433bd9b0ebfb344a6649a684622e70,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3953917601272826366, guid: 17433bd9b0ebfb344a6649a684622e70,
         type: 3}
       propertyPath: m_Mesh
@@ -12233,6 +12253,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scientist
+      objectReference: {fileID: 0}
+    - target: {fileID: 7109606568992734214, guid: 17433bd9b0ebfb344a6649a684622e70,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7388228260647571826, guid: 17433bd9b0ebfb344a6649a684622e70,
         type: 3}
@@ -12775,7 +12800,7 @@ PrefabInstance:
     - target: {fileID: 1355682860062294520, guid: b5139263353c2c240b08e459c623f22f,
         type: 3}
       propertyPath: ShapeModule.radiusThickness
-      value: 1.0000
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2957863186350343286, guid: b5139263353c2c240b08e459c623f22f,
         type: 3}

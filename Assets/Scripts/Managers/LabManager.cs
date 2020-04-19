@@ -135,8 +135,6 @@ public class LabManager : MonoBehaviour
 
     public IEnumerator Success()
     {
-        Debug.Log("Success!");
-        
         ToggleClickability(false);
         
         m_valve.localEulerAngles = new Vector3(0,0,-90);
@@ -154,8 +152,6 @@ public class LabManager : MonoBehaviour
 
     public void Caught()
     {
-        Debug.Log("Caught!");
-        
         ToggleClickability(false);
         
         m_guardAudioSource.clip = m_caughtClip;
@@ -168,7 +164,6 @@ public class LabManager : MonoBehaviour
 
     public IEnumerator Oops()
     {
-        Debug.Log("Oops!");
         ToggleClickability(false);
 
         m_valve.localEulerAngles = new Vector3(0,0,-90);
@@ -189,8 +184,6 @@ public class LabManager : MonoBehaviour
         m_isCountingDown = false;
         RestartManager.RemainingTime = m_projectedTime - DateTime.UtcNow;
         
-        Debug.Log("TooLate!");
-
         ToggleClickability(false);
         m_endlingGas.SetActive(true);
         

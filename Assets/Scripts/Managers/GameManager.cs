@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
         
         if (m_sequences.Count <= m_activeIndex + 1)
         {
-            Debug.Log("FINISHED!");
+            // Done
         }
         else
         {
