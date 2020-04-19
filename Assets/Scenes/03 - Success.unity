@@ -687,15 +687,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a066af67333dd3a4f93562480304cc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SkipOnRestart: 0
+  OnlyOnRestart: 0
   m_cutscenes:
   - CaptionText: 
     CaptionsAudio: {fileID: 0}
     DurationSeconds: 6
     Animations: []
     AudioClips: []
-  - CaptionText: We need to get out of here...
-    CaptionsAudio: {fileID: 8300000, guid: a7999906383523d4eb48b9eb42162394, type: 3}
-    DurationSeconds: 3
+  - CaptionText: Ok, they've all passed out now. We need to get out of here.
+    CaptionsAudio: {fileID: 8300000, guid: 6eebccddb31269e4091427b5d2031389, type: 3}
+    DurationSeconds: 6
     Animations: []
     AudioClips: []
 --- !u!1 &924171812 stripped
