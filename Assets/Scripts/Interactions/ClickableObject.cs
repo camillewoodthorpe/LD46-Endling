@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Random = System.Random;
 
 public class ClickableObject : MonoBehaviour
@@ -9,7 +10,7 @@ public class ClickableObject : MonoBehaviour
     [SerializeField] private string m_objectName = "";
     
     public static bool CanClickOnObjects = false;
-    
+    public UnityEvent Action;
     public event EventHandler Clicked;
 
     private int m_playCount = 0;
@@ -52,7 +53,11 @@ public class ClickableObject : MonoBehaviour
             Clicked.Invoke(this, null);
         
         Reset();
-        StartCoroutine(PlayClip());
+
+        if (AudioClips.Count > 0)
+            StartCoroutine(PlayClip());
+
+        Action.Invoke();
     }
 
     private void Reset()

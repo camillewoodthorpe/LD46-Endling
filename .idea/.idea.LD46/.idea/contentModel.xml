@@ -41,6 +41,7 @@
           <e p="Managers" t="Include">
             <e p="CaptionsManager.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
+            <e p="LabManager.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="OrthoCameraFollow.cs" t="Include" />
@@ -52,10 +53,10 @@
           <e p="Sequences" t="Include">
             <e p="ColliderClickSequence.cs" t="Include" />
             <e p="CutsceneSequence.cs" t="Include" />
-            <e p="LabSequence.cs" t="Include" />
             <e p="Sequence.cs" t="Include" />
             <e p="ToggleClickabilitySequence.cs" t="Include" />
             <e p="ToggleGameobjectSequence.cs" t="Include" />
+            <e p="UnityEventSequence.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="Tooltip.cs" t="Include" />

@@ -3,19 +3,59 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 /// <summary>
 /// Super hard-coded code to quickly get the level working... don't learn from this :)
 /// </summary>
-public class LabSequence : Sequence
+public class LabManager : MonoBehaviour
 {
     private bool m_wearingGasMask = false;
     private bool m_guardInRange = true;
+
+    [SerializeField] private AudioSource m_audioSource;
+    [SerializeField] private AudioClip m_fiveMinCountdownAudio;
+    [SerializeField] private AudioClip m_tenSecCountdownAudio;
+    [SerializeField] private Text m_countdownText;
     
+    private float m_durationMinutes = 5;
+    private DateTime m_projectedTime;
+
+    private bool m_isCountingDown = false;
+    private bool m_isCountingDownTenSecs = false;
     
-    public override void PlaySequence()
+
+    void Update()
     {
-        //
+        if (!m_isCountingDown)
+            return;
+        
+        TimeSpan timeRemaining = m_projectedTime - DateTime.UtcNow;
+        m_countdownText.text = "S C H E D U L E D\n" + timeRemaining.ToString("mm':'ss");
+
+        if (!m_isCountingDownTenSecs && timeRemaining <= TimeSpan.FromSeconds(m_tenSecCountdownAudio.length))
+        {
+            StartTenSecCountdown();
+        }
+    }
+    
+    public void StartFiveMinCountdown()
+    {
+        m_projectedTime = DateTime.UtcNow.AddMinutes(m_durationMinutes);
+        m_isCountingDown = true;
+
+        m_audioSource.clip = m_fiveMinCountdownAudio;
+        m_audioSource.Play();
+    }
+    
+    public void StartTenSecCountdown()
+    {
+        m_isCountingDownTenSecs = true;
+        
+        m_audioSource.clip = m_tenSecCountdownAudio;
+        m_audioSource.Play();
+        
+        // Guard walk
     }
 
     public void ToggleWearingGasMask()
@@ -28,12 +68,6 @@ public class LabSequence : Sequence
     public void ToggleGuardInRange()
     {
         m_guardInRange = !m_guardInRange;
-    }
-    
-    public void StartCountdown()
-    {
-        // Play audio
-        // Guard walk
     }
 
     public void OpenedGasValve()
@@ -54,6 +88,8 @@ public class LabSequence : Sequence
 
     public void Success()
     {
+        Debug.Log("Success!");
+        
         ToggleClickability(false);
         
         // Gassed out others animation
@@ -63,6 +99,8 @@ public class LabSequence : Sequence
 
     public void Caught()
     {
+        Debug.Log("Caught!");
+        
         ToggleClickability(false);
         
         // Guard caught animation
@@ -72,6 +110,8 @@ public class LabSequence : Sequence
 
     public void Oops()
     {
+        Debug.Log("Oops!");
+
         ToggleClickability(false);
         
         // Gassed out animation
@@ -81,6 +121,8 @@ public class LabSequence : Sequence
 
     public void TooLate()
     {
+        Debug.Log("TooLate!");
+
         ToggleClickability(false);
         
         // Kill animation
