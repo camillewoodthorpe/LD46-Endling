@@ -35,6 +35,7 @@ public class LabManager : MonoBehaviour
     private bool m_isCountingDown = false;
     private bool m_isCountingDownTenSecs = false;
 
+    [SerializeField] private Transform m_valve;
     [SerializeField] private GameObject m_endlingGas;
     [SerializeField] private GameObject m_successGas;
     [SerializeField] private AudioClip m_coughing;
@@ -89,7 +90,9 @@ public class LabManager : MonoBehaviour
         m_gasMaskReturn.SetActive(m_wearingGasMask);
         
         // Toggle player avatar...
-        m_playerWalk.m_walkCycle = m_wearingGasMask ? m_playerMask.GetComponent<AnimationCycle>() : m_playerNormal.GetComponent<AnimationCycle>();
+        m_playerWalk.ChangeCycleTarget(m_wearingGasMask
+            ? m_playerMask.GetComponent<AnimationCycle>()
+            : m_playerNormal.GetComponent<AnimationCycle>());
         m_playerMask.SetActive(m_wearingGasMask);
         m_playerNormal.SetActive(!m_wearingGasMask);
     }
@@ -101,6 +104,7 @@ public class LabManager : MonoBehaviour
 
     public void OpenedGasValve()
     {
+        m_isCountingDown = false;
         if (m_guardInRange)
         {
             Caught();
@@ -121,13 +125,16 @@ public class LabManager : MonoBehaviour
         
         ToggleClickability(false);
         
+        m_valve.localEulerAngles = new Vector3(0,0,-90);
         m_successGas.SetActive(true);
         
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(5.0f);
         
         m_guardAudioSource.clip = m_coughing;
         m_guardAudioSource.Play();
 
+        yield return new WaitForSeconds(8.0f);
+        
         LoadFinishScene();
     }
 
@@ -148,7 +155,6 @@ public class LabManager : MonoBehaviour
     public void Oops()
     {
         Debug.Log("Oops!");
-        m_isCountingDown = false;
         ToggleClickability(false);
         
         StartCoroutine(Restart("Scenes/04 - Fail - Gassed Out", 0));

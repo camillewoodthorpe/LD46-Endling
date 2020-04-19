@@ -95,7 +95,7 @@ public class ClickableObject : MonoBehaviour
         if (m_playCount >= AudioClips.Count)
             m_playCount = 0;
 
-        yield return new WaitForSeconds(AudioClips[m_playCount].Clip.length);
+        yield return new WaitForSeconds(currentAudio.Clip.length);
         CaptionsManager.Instance.ToggleCaptions(false);
     }
 }

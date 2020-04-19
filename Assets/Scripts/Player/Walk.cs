@@ -11,7 +11,7 @@ public class Walk : MonoBehaviour
     
     [SerializeField] private GameObject m_walkCirclePrefab;
     [SerializeField] private float m_walkSpeed = 2.0f;
-    public AnimationCycle m_walkCycle;
+    [SerializeField] private AnimationCycle m_walkCycle;
 
     private Vector3 originalScale = new Vector3();
 
@@ -71,5 +71,18 @@ public class Walk : MonoBehaviour
     {
         m_audioSource.Stop();
         m_walkCycle.StopCycle();
+    }
+
+    public void ChangeCycleTarget(AnimationCycle target)
+    {
+        if (target == m_walkCycle)
+            return;
+        
+        bool wasPlaying = m_walkCycle.m_isPlaying;
+        m_walkCycle.StopCycle();
+        
+        m_walkCycle = target;
+        if (wasPlaying)
+            m_walkCycle.StartCycle();
     }
 }

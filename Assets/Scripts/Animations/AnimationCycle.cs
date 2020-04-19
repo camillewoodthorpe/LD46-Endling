@@ -10,7 +10,7 @@ public class AnimationCycle : MonoBehaviour {
 
     [SerializeField] private float m_multiplier = 1.0f;
     
-    private bool m_isPlaying = false;
+    public bool m_isPlaying = false;
 
     [SerializeField] private bool m_playOnStart = false;
 
