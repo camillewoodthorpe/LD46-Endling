@@ -14876,6 +14876,8 @@ MonoBehaviour:
   AudioClips:
   - Clip: {fileID: 8300000, guid: 645d06ae0bef8fc468b0ad07dc97196a, type: 3}
     Caption: Yes, we're ready to go.
+  - Clip: {fileID: 8300000, guid: e95b5bec800a3e94196df6b33fdc61cf, type: 3}
+    Caption: Why's he just standing there?
   m_audioSource: {fileID: 0}
   TooltipText: Talk
 --- !u!1001 &8852069442875825435
