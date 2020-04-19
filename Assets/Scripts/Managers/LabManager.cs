@@ -15,6 +15,7 @@ public class LabManager : MonoBehaviour
     private bool m_guardInRange = true;
     
     [SerializeField] private AudioSource m_guardAudioSource;
+    [SerializeField] private Animator m_guardAnimator;
     [SerializeField] private AudioClip m_caughtClip;
 
     [SerializeField] private AudioSource m_audioSource;
@@ -45,7 +46,7 @@ public class LabManager : MonoBehaviour
 
         if (!m_isCountingDownTenSecs && timeRemaining <= TimeSpan.FromSeconds(m_tenSecCountdownAudio.length + 0.8f))
         {
-            StartTenSecCountdown();
+            StartCoroutine(StartTenSecCountdown());
         }
         else if (DateTime.UtcNow >= m_projectedTime)
         {
@@ -62,7 +63,7 @@ public class LabManager : MonoBehaviour
         m_audioSource.Play();
     }
     
-    public void StartTenSecCountdown()
+    public IEnumerator StartTenSecCountdown()
     {
         m_isCountingDownTenSecs = true;
         
@@ -70,6 +71,10 @@ public class LabManager : MonoBehaviour
         m_audioSource.Play();
         
         // Guard walk
+        m_guardAnimator.SetBool("walk", true);
+
+        yield return new WaitForSeconds(2.0f);
+        m_guardInRange = false;
     }
 
     public void ToggleWearingGasMask()

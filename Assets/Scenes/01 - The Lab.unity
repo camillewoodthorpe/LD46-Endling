@@ -2462,6 +2462,12 @@ MonoBehaviour:
     Caption: Nothing to see here.
   m_audioSource: {fileID: 1646645215}
   TooltipText: Talk
+--- !u!95 &924171817 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2810579651887992210, guid: d64c21f5b689ca644ac4971ea13e7b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2185014606879351156}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &927459471
 GameObject:
   m_ObjectHideFlags: 0
@@ -5229,6 +5235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_guardAudioSource: {fileID: 1646645215}
+  m_guardAnimator: {fileID: 924171817}
   m_caughtClip: {fileID: 8300000, guid: 53c5ee9eaceeea74a8c03ed4a0209299, type: 3}
   m_audioSource: {fileID: 1575848357}
   m_fiveMinCountdownAudio: {fileID: 8300000, guid: 022dc09d3b58ae74ea680e209aa041db,
