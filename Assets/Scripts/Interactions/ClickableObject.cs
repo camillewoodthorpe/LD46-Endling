@@ -6,6 +6,8 @@ using Random = System.Random;
 
 public class ClickableObject : MonoBehaviour
 {
+    [SerializeField] private string m_objectName = "";
+    
     public static bool CanClickOnObjects = false;
     
     public event EventHandler Clicked;
@@ -21,6 +23,19 @@ public class ClickableObject : MonoBehaviour
     
     public List<Audio> AudioClips = new List<Audio>();
     [SerializeField] private AudioSource m_audioSource;
+
+    public string TooltipText = "";
+    
+
+    public void OnMouseEnter()
+    {
+        Tooltip.Instance.ShowTooltip(m_objectName, TooltipText);
+    }
+
+    public void OnMouseExit()
+    {
+        Tooltip.Instance.HideTooltip();
+    }
     
     public void OnMouseDown()
     {

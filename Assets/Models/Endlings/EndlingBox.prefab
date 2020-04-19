@@ -796,10 +796,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c8d73d2e1ab872489f8749ac87d3c39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_objectName: Remains
   AudioClips:
   - Clip: {fileID: 8300000, guid: 5c1dd948b40fb3e4190e4b4336cba139, type: 3}
     Caption: So much death...
   m_audioSource: {fileID: 0}
+  TooltipText: Inspect
 --- !u!1 &8929651251769867873
 GameObject:
   m_ObjectHideFlags: 0

@@ -31,25 +31,35 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="AnimationCycle.cs" t="Include" />
-          <e p="CaptionsManager.cs" t="Include" />
-          <e p="GameManager.cs" t="Include" />
+          <e p="Animations" t="Include">
+            <e p="AnimationCycle.cs" t="Include" />
+          </e>
           <e p="Interactions" t="Include">
             <e p="ClickableObject.cs" t="Include" />
             <e p="Countdown.cs" t="Include" />
+          </e>
+          <e p="Managers" t="Include">
+            <e p="CaptionsManager.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="OrthoCameraFollow.cs" t="Include" />
             <e p="Walk.cs" t="Include" />
           </e>
+          <e p="Scenes" t="Include">
+            <e p="Splash.cs" t="Include" />
+          </e>
           <e p="Sequences" t="Include">
             <e p="ColliderClickSequence.cs" t="Include" />
             <e p="CutsceneSequence.cs" t="Include" />
+            <e p="LabSequence.cs" t="Include" />
             <e p="Sequence.cs" t="Include" />
             <e p="ToggleClickabilitySequence.cs" t="Include" />
             <e p="ToggleGameobjectSequence.cs" t="Include" />
           </e>
-          <e p="Splash.cs" t="Include" />
+          <e p="UI" t="Include">
+            <e p="Tooltip.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="LD46.sln" t="IncludeFlat" />

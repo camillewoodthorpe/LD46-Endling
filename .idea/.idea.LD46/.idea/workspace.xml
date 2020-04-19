@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11615ce6-6d0e-4158-8051-f1cb0a8e86bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sequences/LabSequence.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sequences/LabSequence.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/Camera/Endling.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Camera/Endling.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Splash.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Splash.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,17 +31,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sequences/ColliderClickSequence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sequences/CutsceneSequence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05F2AC9C-8847-4269-9276-5A22EF6D94CA/d0/82e43741/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Splash.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Tooltip.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/OrthoCameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactions/Countdown.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sequences/ToggleClickabilitySequence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sequences/ToggleGameObjectSequence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sequences/Sequence.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sequences/LabSequence.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -43,11 +56,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/WalkCycle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/ToggleGameObjectSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/ToggleClickabilitySequence.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactions/Countdown.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/ToggleGameObjectSequence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/LabSequence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Tooltip.cs" />
       </list>
     </option>
   </component>
@@ -58,11 +73,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
     <property name="settings.editor.selected.configurable" value="ParameterNameHintsOptionsId" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -170,13 +187,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs</url>
-          <line>49</line>
+          <line>59</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" initialLine="49">
             <startOffsets>
-              <option value="1085" />
+              <option value="1190" />
             </startOffsets>
             <endOffsets>
-              <option value="1130" />
+              <option value="1235" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="11" />
