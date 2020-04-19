@@ -12,6 +12,9 @@ public class LabManager : MonoBehaviour
 {
     private bool m_wearingGasMask = false;
     private bool m_guardInRange = true;
+    
+    [SerializeField] private AudioSource m_guardAudioSource;
+    [SerializeField] private AudioClip m_caughtClip;
 
     [SerializeField] private AudioSource m_audioSource;
     [SerializeField] private AudioClip m_fiveMinCountdownAudio;
@@ -103,9 +106,14 @@ public class LabManager : MonoBehaviour
         
         ToggleClickability(false);
         
+        m_guardAudioSource.clip = m_caughtClip;
+        m_guardAudioSource.Play();
+
+        CaptionsManager.Instance.ChangeCaptions("Stop! What are you doing back there?");
+        
         // Guard caught animation
         
-        Restart();
+        StartCoroutine(Restart("Scenes/04 - Fail - Caught"));
     }
 
     public void Oops()
@@ -116,7 +124,7 @@ public class LabManager : MonoBehaviour
         
         // Gassed out animation
         
-        Restart();
+        StartCoroutine(Restart("Scenes/04 - Fail - Gassed Out"));
     }
 
     public void TooLate()
@@ -126,14 +134,17 @@ public class LabManager : MonoBehaviour
         ToggleClickability(false);
         
         // Kill animation
-        
-        Restart();
+
+        StartCoroutine(Restart("Scenes/04 - Fail - Too Late"));
     }
 
-    public void Restart()
+    public IEnumerator Restart(string sceneToLoad)
     {
+        yield return new WaitForSeconds(3.0f);
+
         // Save timer
-        // Restart screen
+        
+        SceneManager.LoadScene(sceneToLoad);
     }
 
     public void LoadFinishScene()

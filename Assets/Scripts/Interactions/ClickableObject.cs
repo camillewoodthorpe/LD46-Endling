@@ -49,6 +49,8 @@ public class ClickableObject : MonoBehaviour
         if (!CanClickOnObjects)
             return;
         
+        Tooltip.Instance.HideTooltip();
+        
         if (Clicked != null)
             Clicked.Invoke(this, null);
         

@@ -21,7 +21,7 @@ public class OrthoCameraFollow : MonoBehaviour
         if (screenPercentage < m_screenPercent || screenPercentage > (1.0f - m_screenPercent))
         {
             iTween.MoveTo(gameObject,
-                iTween.Hash("x", targetPosition.x + 4, "time", m_followSeconds, "oncomplete", "OnFinishZoom", "easetype", iTween.EaseType.easeInOutSine));
+                iTween.Hash("x", targetPosition.x + 10, "time", m_followSeconds, "oncomplete", "OnFinishZoom", "easetype", iTween.EaseType.easeInOutSine));
         }
     }
 

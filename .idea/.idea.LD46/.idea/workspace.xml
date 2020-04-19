@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11615ce6-6d0e-4158-8051-f1cb0a8e86bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Characters.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Characters/Move along.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Characters/Move along.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Characters/Nothing to see here.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Characters/Nothing to see here.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Characters/Stop what are you doing.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/Characters/Stop what are you doing.mp3.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/00 - Splash.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/00 - Splash.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sequences/LabSequence.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sequences/LabSequence.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/LabManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/LabManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/OrthoCameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/OrthoCameraFollow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Splash.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/LoadScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scenes/Splash.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scenes/LoadScene.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +31,13 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sequences/ColliderClickSequence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sequences/CutsceneSequence.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animations/AnimationCycle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05F2AC9C-8847-4269-9276-5A22EF6D94CA/d0/82e43741/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Tooltip.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/CaptionsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/OrthoCameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sequences/UnityEventSequence.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scenes/LoadScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactions/Countdown.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/LabManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sequences/ToggleClickabilitySequence.cs" root0="FORCE_HIGHLIGHTING" />
@@ -41,7 +56,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/ColliderClickSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Splash.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/OrthoCameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/CutsceneSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/WalkCycle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" />
@@ -53,7 +67,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Tooltip.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/LabSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/LabManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/UnityEventSequence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/OrthoCameraFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/Splash.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scenes/LoadScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/LabManager.cs" />
       </list>
     </option>
@@ -169,9 +187,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587198149242" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587197390631">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587274367488">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587197390631" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587274367488" />
   </component>
 </project>

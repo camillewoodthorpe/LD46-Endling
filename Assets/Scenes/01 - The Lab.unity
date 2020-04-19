@@ -2308,6 +2308,35 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 867365153}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &924171812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4130808527212834021, guid: d64c21f5b689ca644ac4971ea13e7b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2185014606879351156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &924171814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924171812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c8d73d2e1ab872489f8749ac87d3c39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_objectName: Guard
+  Action:
+    m_PersistentCalls:
+      m_Calls: []
+  AudioClips:
+  - Clip: {fileID: 8300000, guid: 0d40da4cc8236ee4b9922acee28b201a, type: 3}
+    Caption: Move along.
+  - Clip: {fileID: 8300000, guid: 3d6b3ffc8b3723345965bca29c677231, type: 3}
+    Caption: Nothing to see here.
+  m_audioSource: {fileID: 1646645215}
+  TooltipText: Talk
 --- !u!1 &927459471
 GameObject:
   m_ObjectHideFlags: 0
@@ -4896,6 +4925,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70fb975209fe0544fa3d1728dcc12440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_guardAudioSource: {fileID: 1646645215}
+  m_caughtClip: {fileID: 8300000, guid: 53c5ee9eaceeea74a8c03ed4a0209299, type: 3}
   m_audioSource: {fileID: 1575848357}
   m_fiveMinCountdownAudio: {fileID: 8300000, guid: 022dc09d3b58ae74ea680e209aa041db,
     type: 3}
@@ -5246,6 +5277,108 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80968de5831d6044ab8cffa3b0762c8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1646645214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7593032514111015288, guid: d64c21f5b689ca644ac4971ea13e7b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2185014606879351156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1646645215
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646645214}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1672106344 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8852069444110548052, guid: b5139263353c2c240b08e459c623f22f,
@@ -6104,9 +6237,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  AudioClips:
-  - Clip: {fileID: 8300000, guid: b7f31a8d8ed9bc44ea93bdf2948d1def, type: 3}
-    Caption: This looks dangerous.
+  AudioClips: []
   m_audioSource: {fileID: 0}
   TooltipText: Turn
 --- !u!65 &1945228584
