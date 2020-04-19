@@ -1,6 +1,4 @@
-# ld46
-
-ENDLING
+# ENDLING
 by Camille Woodthorpe
 
 A game made from scratch for for the Ludum Dare 46 (https://ldjam.com/) game jam.
