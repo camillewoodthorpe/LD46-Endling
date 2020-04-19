@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11615ce6-6d0e-4158-8051-f1cb0a8e86bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Player cough.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/Player/Player cough.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Props/GasCylinder.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Props/GasCylinder.mtl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Props/GasCylinder.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Props/GasCylinder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Props/GasCylinder.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/Email.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/Email.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/LabManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/LabManager.cs" afterDir="false" />
-    </list>
+    <list default="true" id="11615ce6-6d0e-4158-8051-f1cb0a8e86bc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
