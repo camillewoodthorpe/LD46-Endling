@@ -190,10 +190,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'A Ludum Dare game by Camille Woodthorpe
+  m_Text: 'TO BE CONTINUED...
 
 
-    Thank you for playing!'
+    A Ludum Dare game by Camille Woodthorpe
+
+
+    Thank
+    you for playing!'
 --- !u!222 &284719395
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -34,6 +34,10 @@ public class LabManager : MonoBehaviour
 
     private bool m_isCountingDown = false;
     private bool m_isCountingDownTenSecs = false;
+
+    [SerializeField] private GameObject m_endlingGas;
+    [SerializeField] private GameObject m_successGas;
+    [SerializeField] private AudioClip m_coughing;
     
 
     void Update()
@@ -107,17 +111,22 @@ public class LabManager : MonoBehaviour
         }
         else
         {
-            Success();
+            StartCoroutine(Success());
         }
     }
 
-    public void Success()
+    public IEnumerator Success()
     {
         Debug.Log("Success!");
         
         ToggleClickability(false);
         
-        // Gassed out others animation
+        m_successGas.SetActive(true);
+        
+        yield return new WaitForSeconds(3.0f);
+        
+        m_guardAudioSource.clip = m_coughing;
+        m_guardAudioSource.Play();
 
         LoadFinishScene();
     }
@@ -133,8 +142,6 @@ public class LabManager : MonoBehaviour
 
         CaptionsManager.Instance.ChangeCaptions("Stop! What are you doing back there?");
         
-        // Guard caught animation
-        
         StartCoroutine(Restart("Scenes/04 - Fail - Caught", 3.0f));
     }
 
@@ -143,8 +150,6 @@ public class LabManager : MonoBehaviour
         Debug.Log("Oops!");
         m_isCountingDown = false;
         ToggleClickability(false);
-        
-        // Gassed out animation
         
         StartCoroutine(Restart("Scenes/04 - Fail - Gassed Out", 0));
     }
@@ -155,9 +160,8 @@ public class LabManager : MonoBehaviour
         Debug.Log("TooLate!");
 
         ToggleClickability(false);
+        m_endlingGas.SetActive(true);
         
-        // Kill animation
-
         StartCoroutine(Restart("Scenes/04 - Fail - Too Late", 0));
     }
 
@@ -175,7 +179,7 @@ public class LabManager : MonoBehaviour
 
     public void LoadFinishScene()
     {
-        SceneManager.LoadScene("Scenes/05 - Credits");
+        SceneManager.LoadScene("Scenes/03 - Success");
     }
 
     private void ToggleClickability(bool status)
