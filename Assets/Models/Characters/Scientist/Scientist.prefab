@@ -101,6 +101,7 @@ MonoBehaviour:
   - {fileID: -2432090755550338912, guid: 6c8c12241c9f5134f852d19cec3d7c4d, type: 3}
   m_meshFilter: {fileID: 0}
   m_multiplier: 1
+  m_playOnStart: 0
 --- !u!1 &3649656423410866587
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,6 +203,7 @@ MonoBehaviour:
   - {fileID: -2432090755550338912, guid: 08df6e50370d986488f50bb809f342c7, type: 3}
   m_meshFilter: {fileID: 3953917601272826366}
   m_multiplier: 1
+  m_playOnStart: 0
 --- !u!1 &7109606568992734214
 GameObject:
   m_ObjectHideFlags: 0

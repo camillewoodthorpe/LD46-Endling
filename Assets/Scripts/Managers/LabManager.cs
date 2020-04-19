@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -20,8 +21,14 @@ public class LabManager : MonoBehaviour
     [SerializeField] private AudioClip m_fiveMinCountdownAudio;
     [SerializeField] private AudioClip m_tenSecCountdownAudio;
     [SerializeField] private Text m_countdownText;
+
+    [SerializeField] private GameObject m_gasMask;
+    [SerializeField] private GameObject m_gasMaskReturn;
+    [SerializeField] private Walk m_playerWalk;
+    [SerializeField] private GameObject m_playerNormal;
+    [SerializeField] private GameObject m_playerMask;
     
-    private float m_durationMinutes = 5;
+    private float m_durationMinutes = 1;
     private DateTime m_projectedTime;
 
     private bool m_isCountingDown = false;
@@ -36,9 +43,13 @@ public class LabManager : MonoBehaviour
         TimeSpan timeRemaining = m_projectedTime - DateTime.UtcNow;
         m_countdownText.text = "S C H E D U L E D\n" + timeRemaining.ToString("mm':'ss");
 
-        if (!m_isCountingDownTenSecs && timeRemaining <= TimeSpan.FromSeconds(m_tenSecCountdownAudio.length))
+        if (!m_isCountingDownTenSecs && timeRemaining <= TimeSpan.FromSeconds(m_tenSecCountdownAudio.length + 0.8f))
         {
             StartTenSecCountdown();
+        }
+        else if (DateTime.UtcNow >= m_projectedTime)
+        {
+            TooLate();
         }
     }
     
@@ -65,7 +76,13 @@ public class LabManager : MonoBehaviour
     {
         m_wearingGasMask = !m_wearingGasMask;
         
+        m_gasMask.SetActive(!m_wearingGasMask);
+        m_gasMaskReturn.SetActive(m_wearingGasMask);
+        
         // Toggle player avatar...
+        m_playerWalk.m_walkCycle = m_wearingGasMask ? m_playerMask.GetComponent<AnimationCycle>() : m_playerNormal.GetComponent<AnimationCycle>();
+        m_playerMask.SetActive(m_wearingGasMask);
+        m_playerNormal.SetActive(!m_wearingGasMask);
     }
 
     public void ToggleGuardInRange()
@@ -113,34 +130,38 @@ public class LabManager : MonoBehaviour
         
         // Guard caught animation
         
-        StartCoroutine(Restart("Scenes/04 - Fail - Caught"));
+        StartCoroutine(Restart("Scenes/04 - Fail - Caught", 3.0f));
     }
 
     public void Oops()
     {
         Debug.Log("Oops!");
-
+        m_isCountingDown = false;
         ToggleClickability(false);
         
         // Gassed out animation
         
-        StartCoroutine(Restart("Scenes/04 - Fail - Gassed Out"));
+        StartCoroutine(Restart("Scenes/04 - Fail - Gassed Out", 0));
     }
 
     public void TooLate()
     {
+        m_isCountingDown = false;
         Debug.Log("TooLate!");
 
         ToggleClickability(false);
         
         // Kill animation
 
-        StartCoroutine(Restart("Scenes/04 - Fail - Too Late"));
+        StartCoroutine(Restart("Scenes/04 - Fail - Too Late", 0));
     }
 
-    public IEnumerator Restart(string sceneToLoad)
+    public IEnumerator Restart(string sceneToLoad, float delay)
     {
-        yield return new WaitForSeconds(3.0f);
+        m_isCountingDown = false;
+        Tooltip.Instance.HideTooltip();
+        
+        yield return new WaitForSeconds(delay);
 
         // Save timer
         
