@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11615ce6-6d0e-4158-8051-f1cb0a8e86bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sequences/LabSequence.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sequences/LabSequence.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD46/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/Camera/Endling.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/Camera/Endling.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01 - The Lab.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Splash.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Splash.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sequences/ToggleClickabilitySequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sequences/ToggleClickabilitySequence.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Tooltip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Tooltip.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +45,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/WalkCycle.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CaptionsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimationCycle.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/ToggleClickabilitySequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Walk.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactions/Countdown.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/ToggleGameObjectSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/LabSequence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Sequences/ToggleClickabilitySequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/Tooltip.cs" />
       </list>
@@ -181,24 +170,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587197390631" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs</url>
-          <line>59</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Interactions/ClickableObject.cs" initialLine="49">
-            <startOffsets>
-              <option value="1190" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1235" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

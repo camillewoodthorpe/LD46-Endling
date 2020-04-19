@@ -29,11 +29,17 @@ public class ClickableObject : MonoBehaviour
 
     public void OnMouseEnter()
     {
+        if (!CanClickOnObjects)
+            return;
+        
         Tooltip.Instance.ShowTooltip(m_objectName, TooltipText);
     }
 
     public void OnMouseExit()
     {
+        if (!CanClickOnObjects)
+            return;
+        
         Tooltip.Instance.HideTooltip();
     }
     
