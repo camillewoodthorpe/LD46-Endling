@@ -29,7 +29,7 @@ public class LabManager : MonoBehaviour
     [SerializeField] private GameObject m_playerNormal;
     [SerializeField] private GameObject m_playerMask;
     
-    private float m_durationMinutes = 1;
+    private float m_durationMinutes = 5;
     private DateTime m_projectedTime;
 
     private bool m_isCountingDown = false;

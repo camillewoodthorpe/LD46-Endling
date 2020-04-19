@@ -336,7 +336,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1575848356}
-        m_MethodName: StartFiveMinCountdown
+        m_MethodName: StartCustomCountdown
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8253,7 +8253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19aaad860962c56498f7cda38c350f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkipOnRestart: 0
+  SkipOnRestart: 1
   OnlyOnRestart: 0
   m_delay: 0
   m_object: {fileID: 1178764081}
@@ -9350,7 +9350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19aaad860962c56498f7cda38c350f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkipOnRestart: 1
+  SkipOnRestart: 0
   OnlyOnRestart: 0
   m_delay: 0
   m_object: {fileID: 585717007}
